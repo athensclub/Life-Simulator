@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<FlowPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="athensclub.comproj.panes.ToolbarController"
+          prefHeight="80.0" prefWidth="640.0"
+          fx:id="pane">
+    <VBox alignment="CENTER">
+        <HBox fx:id="healthPane">
+            <Label text="สุขภาพ: "
+                   textFill="white">
+                <graphic>
+                    <ImageView fx:id="healthIcon"
+                               preserveRatio="true"
+                               fitHeight="24.0"/>
+                </graphic>
+            </Label>
+            <Text fx:id="health"
+                  fill="white"/>
+        </HBox>
+        <HBox fx:id="hungerPane">
+            <Label text="ความอิ่ม: "
+                   textFill="white">
+                <graphic>
+                    <ImageView fx:id="hungerIcon"
+                               preserveRatio="true"
+                               fitHeight="24.0"/>
+                </graphic>
+            </Label>
+            <Text fx:id="hunger"
+                  fill="white"/>
+        </HBox>
+    </VBox>
+    <VBox alignment="CENTER">
+        <HBox fx:id="agePane">
+            <Label text="อายุ"
+                   textFill="white">
+                <graphic>
+                    <ImageView fx:id="ageIcon"
+                               preserveRatio="true"
+                               fitHeight="24.0"/>
+                </graphic>
+            </Label>
+            <Text fx:id="age"
+                  fill="white"/>
+        </HBox>
+        <HBox fx:id="moneyPane">
+            <Label text="เงิน" textFill="white">
+                <graphic>
+                    <ImageView fx:id="moneyIcon"
+                               preserveRatio="true"
+                               fitHeight="24.0"/>
+                </graphic>
+            </Label>
+            <Text fx:id="money"
+                  fill="white"/>
+        </HBox>
+    </VBox>
+    <HBox alignment="CENTER_RIGHT">
+        <Button text="กลับหน้าหลัก"
+                  onAction="#onBackToMainMenuClicked" alignment="BASELINE_RIGHT"/>
+    </HBox>
+</FlowPane>

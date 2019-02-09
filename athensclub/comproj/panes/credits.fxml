@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="athensclub.comproj.panes.CreditsController"
+            prefHeight="640.0" prefWidth="640.0"
+            fx:id="pane">
+    <top>
+        <VBox alignment="CENTER" fx:id="title">
+            <Label text="คณะผู้จัดทำโครงงาน"
+                   textFill="white"/>
+        </VBox>
+    </top>
+    <center>
+        <VBox fx:id="names"
+              alignment="CENTER">
+            <Label text="เด็กชายอนุวิท เอี่ยมศิริวัฒนา มัธยมศึกษา3/3 เลขที่ 13"
+                   textFill="white"/>
+            <Label text="เด็กชายเอื้อ พัฒโน ภัทรปิติกุล มัธยมศึกษา3/3 เลขที่ 15"
+                   textFill="white"/>
+            <Label text="เด็กชายกวิน รัตนพันธ์ มัธยมศึกษา3/3 เลขที่ 16"
+                   textFill="white"/>
+            <Label text="เด็กชายธนกร ประไพสิทธิ์ มัธยมศึกษา3/3 เลขที่ 17"
+                   textFill="white"/>
+            <Label text="เด็กชายวิชญ์พล เลิศไกร มัธยมศึกษา3/3 เลขที่ 19"
+                   textFill="white"/>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="BOTTOM_RIGHT"
+              fx:id="backToMainMenu">
+            <Button text="กลับหน้าหลัก"
+                    onAction="#onBackToMainMenuClicked"/>
+        </HBox>
+    </bottom>
+</BorderPane>

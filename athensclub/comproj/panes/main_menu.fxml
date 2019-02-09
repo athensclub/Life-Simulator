@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import athensclub.comproj.control.GMenu?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="athensclub.comproj.panes.MainMenuController"
+            prefHeight="640.0" prefWidth="640.0"
+            fx:id="pane">
+    <top>
+        <VBox fx:id="title"
+              spacing="10"
+              alignment="CENTER">
+            <Label text="Life Simulator" textFill="white"/>
+            <Label text="จำลองชีวิตเริ่มจากศูนย์" textFill="white"/>
+        </VBox>
+    </top>
+    <center>
+        <VBox fx:id="buttons"
+              spacing="10"
+              alignment="CENTER"
+              BorderPane.alignment="CENTER">
+            <Button text="เริ่มเกมใหม่" onAction="#onNewGameClicked"/>
+            <Button text="รายชื่อผู้ทำโครงงาน" onAction="#onCreditsClicked"/>
+        </VBox>
+    </center>
+</BorderPane>

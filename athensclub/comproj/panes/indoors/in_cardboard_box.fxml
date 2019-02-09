@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import athensclub.comproj.control.*?>
+<?import javafx.scene.text.Text?>
+<?import athensclub.comproj.control.GMenu?>
+<?import athensclub.comproj.control.BackToMapButton?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="athensclub.comproj.panes.indoors.InCardboardBoxController"
+            prefHeight="640.0" prefWidth="640.0"
+            fx:id="pane">
+    <center>
+    	<GMenu title="ภายในบ้านกล่องกระดาษลัง">
+    		<GButton text="ขอทาน (ได้ 10 บาทต่อครั้ง)" 
+                     onAction="#onBegClicked"/>
+            <GButton text="หาของกินในถังขยะ" 
+                     onAction="#onEatFromTrashClicked"/>
+            <GButton text="นอนในกระดาษลัง" 
+                     onAction="#onSleepInCardboardBoxClicked"/>
+    	</GMenu>
+    </center>
+    <bottom>
+        <BackToMapButton/>
+    </bottom>
+</BorderPane>

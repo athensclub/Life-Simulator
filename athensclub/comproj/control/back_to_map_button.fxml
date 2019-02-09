@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import athensclub.comproj.control.*?>
+<?import javafx.scene.text.Text?>
+<?import athensclub.comproj.control.GMenu?>
+
+<fx:root type="javafx.scene.layout.HBox"
+		 xmlns:fx="http://javafx.com/fxml/1" 
+		 alignment="BOTTOM_RIGHT">
+	<Button text="กลับสู่แผนที่" 
+			onAction="#onClicked"/>
+</fx:root>
+

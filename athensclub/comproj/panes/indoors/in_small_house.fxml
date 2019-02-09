@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import athensclub.comproj.control.*?>
+<?import javafx.scene.text.Text?>
+<?import athensclub.comproj.control.GMenu?>
+<?import athensclub.comproj.control.BackToMapButton?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="athensclub.comproj.panes.indoors.InSmallHouseController"
+            prefHeight="640.0" prefWidth="640.0"
+            fx:id="pane">
+    <center>
+    	<GMenu title="ในบ้านหลังเล็ก" 
+    		   fx:id="menu">
+    		<GButton text="นอนในบ้านหลังเล็ก"  
+    				 onAction="#onSleepInSmallHouseClicked" 
+    				 fx:id="sleepInSmallHouse"/>
+    		<GButton text="" 
+    				 onAction="#onEatHomemadeFoodClicked" 
+    				 fx:id="eatHomemadeFood"/>
+    		<GButton text="ซื้อบ้านหลังนี้ (2500 บาท)" 
+    				 onAction="#onBuySmallHouseClicked" 
+    				 fx:id="buySmallHouse"/>
+    	</GMenu>
+    </center>
+    <bottom>
+        <BackToMapButton/> 
+    </bottom>
+</BorderPane>

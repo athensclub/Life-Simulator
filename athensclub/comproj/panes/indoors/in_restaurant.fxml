@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import athensclub.comproj.control.*?>
+<?import javafx.scene.text.Text?>
+<?import athensclub.comproj.control.GMenu?>
+<?import athensclub.comproj.control.BackToMapButton?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" 
+			fx:id="pane" 
+			prefWidth="640.0" prefHeight="640.0" 
+			fx:controller="athensclub.comproj.panes.indoors.InRestaurantController">
+	<center>
+		<GMenu fx:id="menu" 
+			   title="ในร้านอาหาร" 
+			   textFill="white">
+			<GButton text="ซื้ออาหารชุดเล็ก (30บาท)" 
+					 onAction="#onBuyRestaurantSmallFoodClicked"/>
+			<GButton text="ซื้ออาหารชุดกลาง(55 บาท)" 
+					 onAction="#onBuyRestaurantMediumFoodClicked"/>
+			<GButton text="ซื้ออาหารชุดใหญ่(70บาท)" 
+					 onAction="#onBuyRestaurantLargeFoodClicked"/>
+		</GMenu>
+	</center>
+	<bottom>
+		<BackToMapButton/>
+	</bottom>
+</BorderPane>
+
